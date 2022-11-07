@@ -1,5 +1,6 @@
-let menuToggle = docuemnt.querySlector('.menuToggle');
-let navigation = docuemnt.querySlector('.navigation');
-menuToggle.onClick = function () {
-	navigation.classList.toggle('acive')
+let menuToggle = document.querySelector('.menuToggle');
+console.log(menuToggle)
+let navigation = document.querySelector('.navigation');
+menuToggle.onclick = function () {
+	navigation.classList.toggle('active')
 }

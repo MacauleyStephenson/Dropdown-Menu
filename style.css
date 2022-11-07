@@ -21,8 +21,16 @@ body
 	box-shadow: 0 25px 35px rgba(0,0,0,0,0.1);
 	display: flex;
 	justify-content: space-between;
+	transition: height 0.5s, width 0.5s;
+	transition-delay: 0s, 0.75s;
 }
-
+.navigation.active
+{
+	width: 300px;
+	height: 400px;
+	transition: width 0.5s, height 0.5s;
+	transition-delay: 0s, 0.75s;
+}
 .navigation .userBx {
 	position: relative;
 	width: 60px;
@@ -83,4 +91,14 @@ body
 	background: #555;
 	transform: translateY(10px);
 	transition: 0.5s;
+}
+
+.navigation.active .menuToggle::before
+{
+	transform: translateY(0px) rotate(45deg);
+	box-shadow: 0 0 #555;
+}
+
+.navigation.active .menuToggle::after{
+	transform: translateY(0px) rotate(-45deg);
 }
