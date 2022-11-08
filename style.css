@@ -36,6 +36,22 @@ body
 	width: 60px;
 	height: 60px;
 	background-color: #fff;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.navigation.active .userBx{
+ width: calc(100% - 60px);
+ transition-delay: 0s;
+}
+
+.navigation .userBx .username{
+	white-space: nowrap;
+	color: #555;
+	font-size: 1.1em;
 }
 
 .navigation .userBx .imgBx
